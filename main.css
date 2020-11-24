@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+}
+
+.strobe_1 {
+  background-color: yellow;
+  animation: first 2s infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+@keyframes first {
+  from, to {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_1:hover {
+  animation-play-state:running;
+}
+
+.strobe_2 {
+  background-color: red;
+  animation: second 2s infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+@keyframes second {
+  from, to {
+    background-color: red;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_2:hover {
+  animation-play-state: running;
+}
+
+.strobe_3 {
+  background-color: blue;
+  animation: third 2s infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+@keyframes third {
+  from, to {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_3:hover {
+  animation-play-state: running;
+}
+
+.strobe_4 {
+  background-color: green;
+  animation: fourth 2s infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+@keyframes fourth {
+  from, to {
+    background-color: green;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_4:hover {
+  animation-play-state: running;
+}
+
+.strobe_5 {
+  background-color: palevioletred;
+  animation: fifth 2s infinite alternate-reverse;
+  animation-play-state: paused;
+}
+
+@keyframes fifth {
+  from, to {
+    background-color: palevioletred;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+}
+
+.strobe_5:hover {
+  animation-play-state: running;
+}
